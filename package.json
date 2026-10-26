@@ -1,0 +1,21 @@
+{
+  "name": "chupchup-scrapers",
+  "version": "1.0.0",
+  "description": "ChupChup – Scrapers de supermercados españoles con integración directa a Supabase",
+  "type": "module",
+  "scripts": {
+    "scrape:mercadona": "node scrapers/scrape-mercadona.mjs",
+    "scrape:mercadona:fast": "node scrapers/scrape-mercadona.mjs --fast",
+    "scrape:others": "node scrapers/scrape-other-supermarkets.mjs",
+    "scrape:all": "node scrapers/scrape-mercadona.mjs && node scrapers/scrape-other-supermarkets.mjs",
+    "test": "echo \"Sin tests definidos aún\" && exit 0"
+  },
+  "keywords": ["scraper", "supermercados", "supabase", "spain", "mercadona"],
+  "author": "ChupChup",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
+    "dotenv": "^18.0.9"
+  }
+}
+
